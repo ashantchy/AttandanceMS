@@ -1,0 +1,21 @@
+.
+├── alembic/                      # Alembic migration files
+│   ├── versions/
+│   └── env.py
+├── lib/
+│   └── attend/
+│       ├── domain/
+│       │   ├── models.py         # Pure Python Domain Entities
+│       │   └── schemas.py        # Pydantic Schemas for API
+│       ├── repository/
+│       │   ├── database.py       # Connection factory & DI dependency
+│       │   ├── staff_repository.py
+│       │   └── attendance_repository.py
+│       ├── services/
+│       │   └── attendance_service.py
+│       └── routers/
+│           ├── staff_router.py
+│           └── attendance_router.py
+├── alembic.ini                   # Alembic configuration
+├── requirements.txt
+└── main.py                       # App entry point
