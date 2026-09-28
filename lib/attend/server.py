@@ -9,3 +9,8 @@ app = FastAPI(title="Attendance Management System")
 app.include_router(staff_router)
 app.include_router(attendance_router)
 
+@app.get("/")
+async def root():
+    return {
+        "message": "Attend API is running"
+    }
