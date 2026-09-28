@@ -9,6 +9,8 @@ app = FastAPI(title="Attendance Management System")
 app.include_router(staff_router)
 app.include_router(attendance_router)
 
+application = app
+
 @app.get("/")
 async def root():
     return {
