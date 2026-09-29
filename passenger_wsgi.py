@@ -1,3 +1,3 @@
-from lib.attend.server import app
+# from lib.attend.server import app
 
-application = app
+# application = app
