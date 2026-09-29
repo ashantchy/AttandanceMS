@@ -1,2 +1,2 @@
 [tool.vercel]
-entrypoint = "lib.attend.server:app"
+entrypoint = "main:app"
