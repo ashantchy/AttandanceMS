@@ -3,11 +3,11 @@ from typing import AsyncGenerator
 import os
 from dotenv import load_dotenv
 
-load_dotenv(".local.properties", override=True)
+load_dotenv(".local.properties")
 
 DB_CONFIG = {
     "host": os.getenv("HOST", "localhost"),
-    "user": os.getenv("USER", "root"),
+    "user": os.getenv("DB_USER", "root"),
     "password": os.getenv("PASSWORD", ""),
     "db": os.getenv("DATABASE", "attendance_db"),
     "port": int(os.getenv("PORT", 3306)),
